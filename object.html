@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <title>Трансстрой - строительная компания</title>
     <link href="fonts/Montserrat.css" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.cst.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/lightslider.css">
-    <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="div-mask"></div>
     <nav class="navbar navbar-expand-lg">
       <div class="container px-lg-3">
         <a class="navbar-brand mr-auto mr-lg-0" href="index.html"><img src="img/logo.svg" alt="Logotype"></a>
@@ -23,14 +22,13 @@
             </button>
           </div>
           <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-            <div class="offcanvas-overlay"></div>
             <ul class="navbar-nav mr-auto">
               <li class="nav-mobile d-lg-none">
                 <span class="nav-link">8 (4112) 25-84-40</span>
                 <button class="d-lg-none p-0" type="button" data-toggle="offcanvas"> <span class="navbar-toggler-icon"></span> </button>
               </li>
-              <li class="nav-item d-lg-none">
-                <a class="nav-link" href="object.html">Главная</a>
+              <li class="nav-item active d-lg-none">
+                <a class="nav-link" href="index.html">Главная</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="object.html">Объекты</a>
@@ -182,7 +180,7 @@
         </div>
         <div class="row copy pt-2">
           <div class="col-lg-6 copy">
-            <p>ТРАНССТРОЙ &copy 2019</p>
+            <p>ТРАНССТРОЙ &copy; 2019</p>
           </div>
           <div class="col-lg-6">
             <div class="platforma">
@@ -195,6 +193,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function(){
       $(document).ready(function() {
@@ -210,14 +209,5 @@
           });
         });
       });;
-    </script>
-    <script type="text/javascript">
-    $(function () {
-  'use strict'
-
-  $('[data-toggle="offcanvas"]').on('click', function () {
-    $('.offcanvas-collapse').toggleClass('open')
-  })
-})
     </script>
 </html>

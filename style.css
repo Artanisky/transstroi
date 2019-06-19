@@ -134,7 +134,7 @@ body {
   display: block;
   font-weight: bold;
   color: #2B2A29;
-  font-size: 12px;
+  font-size: 18px;
 }
 .contact .form-group input {
   color: #828282;
@@ -453,6 +453,7 @@ body {
   padding-top: 12px;
 }
 .project-slider p {
+  font-size: 14px;
   line-height: 22px;
 }
 .project-slider .right-side {
@@ -943,6 +944,9 @@ body {
   .slide .arrow .arrow-right {
     width: 36px;
     height: 36px;
+  }
+  .contact .form-group label {
+    font-size: 16px;
   }
   .footer .footer-item {
     width: 17.78%;
