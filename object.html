@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/lightslider.css">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <!-- <link type="text/css" rel="stylesheet" href="newstyle.css"> -->
   </head>
   <body>
     <div class="div-mask"></div>
@@ -27,10 +28,10 @@
                 <span class="nav-link">8 (4112) 25-84-40</span>
                 <button class="d-lg-none p-0" type="button" data-toggle="offcanvas"> <span class="navbar-toggler-icon"></span> </button>
               </li>
-              <li class="nav-item active d-lg-none">
+              <li class="nav-item d-lg-none">
                 <a class="nav-link" href="index.html">Главная</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="object.html">Объекты</a>
               </li>
               <li class="nav-item">
@@ -56,73 +57,54 @@
     <section class="wrapper">
       <div class="container line">
         <h3>Объекты</h3>
-        <div class="indent" style="height:40px;"></div>
-        <div class="row object">
-            <div class="col-object-1">
-              <div class="object-info py-3">
-                <span class="state">Сданный объект</span>
-                <h5>Многоквартирный жилой дом № 3 с магазином  (ввод в эксплуатацию 3 кв. 2015 г.)</h5>
-                <p>(введен в эксплуатацию в 4 квартале 2013 г.)</p>
-                <p>Разрешение на строительство: № RU 14301000-135-12 от 20.09.2012 г., выдано Окружной Администрацией г. Якутска.</p>
-                <p>Права застройщика на земельный участок: Свидетельство о государственной регистрации права на земельный участок серии 14-АА № 960911 от 08 октября 2012 г.</p>
-                <p>Проектная декларация опубликована в газете "Эхо Столицы" №13(2028) от 21 февраля 2012 года, № 80(2095) от 12.10.2012 г., № 82(2097) от 19.10.2012 г.</p>
-                <p>Разрешение на ввод объекта в эксплуатацию: № RU 14301000-86-13 от 27.12.2013 г.</p>
-                <div class="text-center">
-                  <a class="btn btn-theme btn-success" href="#">Квартиры в наличии</a>
+        <div class="indent d-none d-lg-block" style="height:40px;"></div>
+        <div class="object">
+          <div class="row object">
+            <h5 class="d-lg-none d-inline-block">Многоквартирный жилой дом № 3 с магазином  (ввод в эксплуатацию 3 кв. 2015 г.)</h5>
+            <div class="col-object row collapse" id="collapseExample">
+              <div class="col-object-1">
+                <div class="object-info py-3">
+                  <span class="state">Сданный объект</span>
+                  <h5 class="d-none d-lg-block">Многоквартирный жилой дом № 3 с магазином  (ввод в эксплуатацию 3 кв. 2015 г.)</h5>
+                  <p>(введен в эксплуатацию в 4 квартале 2013 г.)</p>
+                  <p>Разрешение на строительство: № RU 14301000-135-12 от 20.09.2012 г., выдано Окружной Администрацией г. Якутска.</p>
+                  <p>Права застройщика на земельный участок: Свидетельство о государственной регистрации права на земельный участок серии 14-АА № 960911 от 08 октября 2012 г.</p>
+                  <p>Проектная декларация опубликована в газете "Эхо Столицы" №13(2028) от 21 февраля 2012 года, № 80(2095) от 12.10.2012 г., № 82(2097) от 19.10.2012 г.</p>
+                  <p>Разрешение на ввод объекта в эксплуатацию: № RU 14301000-86-13 от 27.12.2013 г.</p>
+                  <div class="text-center">
+                    <span class="btn btn-theme btn-success">Квартиры в наличии</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-object-2">
+                <div class="object-doc py-3">
+                  <h5>Документы</h5>
+                  <a href="#">Проектная декларация дом № 1 со встроено-пристроенным соцкульбытом</a>
+                  <a href="#">Внесение изменений в проектную декларацию дома № 1 от 15 августа 2013 года</a>
                 </div>
               </div>
             </div>
-            <div class="col-object-2">
-              <div class="object-doc py-3">
-                <h5>Документы</h5>
-                <a href="#">Проектная декларация дом № 1 со встроено-пристроенным соцкульбытом</a>
-                <a href="#">Внесение изменений в проектную декларацию дома № 1 от 15 августа 2013 года</a>
-              </div>
+            <div class="col-12 py-2 d-lg-none d-inline-block text-center">
+              <a class="btn btn-more" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Подробнее</a>
             </div>
-            <div class="col-object-3">
-              <div class="object-photo py-3">
-                <ul id="slide">
-                  <li data-thumb="img/object/1.png">
-                    <img src="img/object/1.png" alt="">
-                  </li>
-                  <li data-thumb="img/slide/thumb/2.png">
-                    <img src="img/slide/stolisa2.png" alt="">
-                  </li>
-                  <li data-thumb="img/slide/thumb/3.png">
-                    <img src="img/slide/stolisa3.png" alt="">
-                  </li>
-                  <li data-thumb="img/slide/thumb/4.png">
-                    <img src="img/slide/stolisa4.png" alt="">
-                  </li>
-                  <li data-thumb="img/slide/thumb/5.png">
-                    <img src="img/slide/stolisa5.png" alt="">
-                  </li>
-                  <li data-thumb="img/slide/thumb/6.png">
-                    <img src="img/slide/stolisa6.png" alt="">
-                  </li>
-                  <li data-thumb="img/slide/thumb/7.png">
-                    <img src="img/slide/stolisa7.png" alt="">
-                  </li>
-                </ul>
+              <div class="col-object-3">
+                <div class="object-photo pb-3">
+                  <img class="img-fluid" src="img/8.png" alt="">
+                </div>
               </div>
-            </div>
+          </div>
         </div>
-        <div class="indent" style="height:98px;"></div>
+        <div class="indent d-none d-lg-block" style="height:98px;"></div>
           <ul class="pagination">
             <li class="page-item">
               <a class="page-link" href="#" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">...</a></li>
-            <li class="page-item"><a class="page-link" href="#">11</a></li>
-            <li class="page-item"><a class="page-link" href="#">12</a></li>
-            <li class="page-item"><a class="page-link" href="#">13</a></li>
             <li class="page-item">
               <a class="page-link" href="#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
@@ -194,6 +176,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function(){
       $(document).ready(function() {
@@ -206,6 +189,16 @@
                 slideMargin:0,
                 controls:false,
                 enableDrag: false,
+                responsive: [
+                  {
+                    breakpoint: 996,
+                      settings: {
+                        vThumbWidth:68,
+                        thumbMargin:10,
+                        verticalHeight:20,
+                      }
+                  }
+                ]
           });
         });
       });;
