@@ -257,11 +257,14 @@ body {
 .btn-theme:focus {
   box-shadow: none;
 }
-.btn-success {
+.btn-success,
+.btn-success:hover,
+.btn-success:active {
   border-color: #27AE60;
   color: #27AE60;
   background: none;
 }
+
 .btn-gray {
   border-color: #828282;
   color: #828282;
