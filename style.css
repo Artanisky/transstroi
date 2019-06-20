@@ -127,9 +127,6 @@ body {
 .contact-container {
   width: 100%
 }
-.contact {
-  padding-right: 0;
-}
 .contact .form-group label {
   display: block;
   font-weight: bold;
@@ -202,13 +199,15 @@ body {
   z-index: 10;
 }
 .news-block h4 {
-  font-weight: bold
+  font-weight: bold;
+  font-size: 20px;
 }
 .slider-text h2 {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+  font-size: 24px;
 }
 .slider-text {
   color: #fff;
@@ -223,6 +222,7 @@ body {
 }
 .footer {
   background: #2B2A29;
+  padding: 52px 0 102px 0;
 }
 .footer-nav {
   color: #fff;
@@ -252,7 +252,8 @@ body {
   box-sizing: border-box;
   border-radius: 29px;
   font-weight: 500;
-  padding: 12px 40px;
+  font-size: 14px;
+  padding: 10px 40px;
   color: #F39314;
 }
 .btn-success {
@@ -271,6 +272,7 @@ body {
   text-decoration: underline;
   border: 0;
   padding: 0;
+  font-size: 18px;
 }
 .slider-btn img {
   padding-left: 6px;
@@ -302,7 +304,7 @@ body {
 .project .title {
   font-style: normal;
   font-weight: bold;
-  /* line-height: 17px; */
+  font-size: 14px;
   letter-spacing: 0.1em;
   color: #A5A5A5;
   margin: 4px 0;
@@ -316,8 +318,7 @@ body {
 .project h3 {
   font-style: normal;
   font-weight: bold;
-
-  /* line-height: 44px; */
+  font-size: 36px;
   color: #2B2A29;
   margin: 0;
 }
@@ -404,8 +405,8 @@ body {
 .slide .dots li.active {
   position: relative;
   margin: 2px 0;
-  width: 12px;
-	height: 12px;
+  width: 14px;
+	height: 14px;
   border: 1px solid #F39314;
   opacity: 1;
 }
@@ -416,8 +417,8 @@ body {
 	position: absolute;
   background: #F39314;
   border-radius: 10px;
-	top: 2px;
-	left: 2px;
+	top: 3px;
+	left: 3px;
 	color: #99a1a7;
 }
 .slide .arrow {
@@ -497,7 +498,8 @@ body {
   align-items: center;
 }
 .personal-data label {
-  padding-right: 14px;
+  font-size: 12px;
+  padding-right: 11px;
   margin-bottom: 0;
 }
 .custom-checkbox {
@@ -580,8 +582,6 @@ body {
   color: #F39314;
   padding: 6px 0;
   text-decoration: underline;
-}
-.object-photo {
 }
 .line {
   padding: 15px 17px 12px 17px;
@@ -901,8 +901,17 @@ body {
   html {
     font-size: 14px;
   }
+  .news-block .col-lg-6 {
+    padding-right: 80px;
+  }
+  .contact .form-group label {
+    font-size: 12px;
+  }
   .container {
     max-width: 882px;
+  }
+  .footer {
+    padding: 52px 0 31px 0;
   }
   .site-header {
     height: 64px;
@@ -913,6 +922,13 @@ body {
   }
   .site-logo {
     padding: 0;
+  }
+  .news-block h4 {
+    font-size: 16px;
+  }
+  .news-block p {
+    font-size: 12px;
+    line-height: 16px;
   }
   .navbar {
     padding: .224rem 1rem;
@@ -926,8 +942,11 @@ body {
   .slider-text {
     padding-bottom: 40px;
   }
-  .slider-text p{
+  .slider-text p {
     margin: 0;
+  }
+  .slider-text h2 {
+    font-size: 16px;
   }
   .slide .dots {
     bottom: 24px;
@@ -945,9 +964,6 @@ body {
     width: 36px;
     height: 36px;
   }
-  .contact .form-group label {
-    font-size: 16px;
-  }
   .footer .footer-item {
     width: 17.78%;
   }
@@ -963,6 +979,10 @@ body {
   .project h3 {
     padding-top: 20px;
     position: absolute;
+    font-size: 28px;
+  }
+  .project-slider p {
+    font-size: 12px;
   }
   .lSSlideOuter .lSSlideWrapper {
     margin-top: 71px;
@@ -1156,12 +1176,25 @@ body {
   }
   .site-contact {
     border: 0;
+    padding: 12px 0;
+  }
+  .contact {
+    margin: 0;
+  }
+  .footer {
+    padding: 16px 0;
+  }
+  .seven-cols .col-sv, .seven-cols .col-nf {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .site-contact h3 {
+    padding-left: 17px;
+    padding-right: 17px!important;
+    margin-top: 3px;
   }
   .contact .form-group {
     padding-left: 17px;
-  }
-  .contact .form-group{
-    padding-left: 0;
   }
   .submit-block {
     padding: 0;
@@ -1178,14 +1211,17 @@ body {
     margin-bottom: 28px;
     justify-content: space-between;
     font-size: 10px;
-    padding: 12px 0;
-    margin-left: -17px;
+    padding: 12px 17px;
+    width: 100%;
   }
   .news-block .col-lg-6:last-child {
     padding-top: 210px;
   }
   .news-block .col-lg-6:last-child h4{
     margin-right: 150px;
+  }
+  .news-block .col-lg-6 {
+    padding-right: 0;
   }
 }
 
@@ -1215,18 +1251,22 @@ body {
   .site-contact h3 {
     font-size: 28px;
   }
-  .news-block .col-lg-6 {
-    padding-right: 60px;
-  }
   .news-block {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 22px;
   }
   .contact {
     padding: 0;
   }
+  .contact .form-group label {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .navbar {
+    padding: 1.188rem 1rem;
+  }
   .seven-cols .col-sv {
     width: 14.285714285714285714285714285714%;
   }
@@ -1239,6 +1279,9 @@ body {
   .object .col-object-2,
   .object .col-object-3 {
     width: 31.83333333%
+  }
+  .news-block .col-lg-6 {
+    padding-right: 200px;
   }
   .phone {
     background-size: 24px;
