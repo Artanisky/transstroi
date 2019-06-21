@@ -166,7 +166,7 @@
               </div>
             </div>
         </div>
-        <div class="py-2 d-lg-none d-inline-block text-center toggle-btn2">
+        <div class="py-2 d-lg-none d-inline-block text-center toggle-btn">
           <a href="" class="btn btn-more">Раскрыть</a>
         </div>
         </div>
@@ -246,34 +246,28 @@
     <script src="js/main.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
-    var owl;
-    owl = $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        items:1,
-        mouseDrag:false,
-        touchDrag:false,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        dotsContainer: '#carousel-custom-dots',
-        navContainer: ".navigation",
-        navText:["", ""]
-    });
-    $('.owl-dots').on('click', 'li', function(e) {
-       owl.trigger('to.owl.carousel', [$(this).index(), 300]);
-     });
+      var owl;
+      owl = $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          items:1,
+          mouseDrag:false,
+          touchDrag:false,
+          animateOut: 'fadeOut',
+          animateIn: 'fadeIn',
+          dotsContainer: '#carousel-custom-dots',
+          navContainer: ".navigation",
+          navText:["", ""]
+      });
+      $('.owl-dots').on('click', 'li', function(e) {
+         owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+       });
     </script>
     <script type="text/javascript">
-    $(".toggle-btn").click(function(e) {
-    	e.preventDefault();
-      $(this).prev().toggleClass("text-open")
-    })
-    </script>
-    <script type="text/javascript">
-    $(".toggle-btn2").click(function(e) {
-    	e.preventDefault();
-      $(this).prev().toggleClass("text-open")
-    })
+      $(".toggle-btn").click(function(e) {
+      	e.preventDefault();
+        $(this).prev().toggleClass("text-open");
+      })
     </script>
 </html>

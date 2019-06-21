@@ -200,6 +200,18 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+.news-block .title {
+  display: block;
+  flex: none;
+  width: 100%;
+  border-top: 1px solid #eee;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 32px;
+  margin-bottom: 0;
+  padding: 8px 12px;
+}
 .slider-text h2 {
   color: #fff;
   font-weight: bold;
@@ -250,7 +262,6 @@ body {
 }
 .btn-theme {
   border: 1px solid #F39314;
-  box-sizing: border-box;
   border-radius: 29px;
   font-weight: 500;
   font-size: 14px;
@@ -259,25 +270,29 @@ body {
 }
 .btn-theme:hover {
   background: #F39314;
-  color: #fff;
+  color: #fff!important;
 }
 .btn-more:focus,
 .btn-theme:focus {
   box-shadow: none;
 }
-.btn-success,
-.btn-success:hover,
-.btn-success:active {
-  border-color: #27AE60!important;
-  color: #27AE60!important;
-  background: none!important;
+.object-status {
+  border: 1px solid #F39314;
+  box-sizing: border-box;
+  border-radius: 29px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 40px;
+}
+.object-some {
+  border-color: #27AE60;
+  color: #27AE60;
+  background: none;
 }
 
-.btn-gray,
-.btn-gray:hover,
-.btn-gray:active  {
+.object-none{
   border-color: #828282;
-  color: #828282;
+  color: #828282!important;
   background: none;
 }
 .btn-more {
@@ -771,6 +786,7 @@ body {
   border-right: 1px solid #eee;
   padding: 38px 37px 33px 27px;
   font-size: 18px;
+  margin-bottom: 0;
 }
 .about-info {
   background: #f9f9f9;
@@ -1260,6 +1276,7 @@ body {
     margin-bottom: 50px;
     border-top: 1px solid #eee;
     margin: 0 -12px;
+    margin-bottom: 50px;
   }
   .pagination .page-item .page-link {
     padding: 9px 14px;
@@ -1284,6 +1301,9 @@ body {
     border: 0;
     padding: 15px;
   }
+  .youtube .content {
+    padding: 18px 0;
+  }
   .intro .content {
     flex-direction: column;
   }
@@ -1297,6 +1317,9 @@ body {
   }
   .intro .content {
     padding: 0;
+  }
+  .map {
+    width: auto;
   }
   .about-photo .text {
     padding: 38px 12px 0 33px;
@@ -1371,12 +1394,10 @@ body {
   .slide .slide-img {
     position: relative;
     width: 100%;
-    margin: 34px 0 40px 0;
-    border-top: 1px solid #eee;
+    margin-bottom: 40px;
   }
   .slide ul li {
     height: 200px;
-    margin-top: 40px
   }
   .slide .overlay {
     display: none;
@@ -1551,7 +1572,6 @@ body {
     border-right: 0;
     display: block;
     font-size: 14px;
-    margin-bottom: 0;
   }
   .team .content .row {
     padding: 0;
