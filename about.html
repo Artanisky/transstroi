@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/lightslider.css">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="assets/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/owl.theme.default.min.css">
     <!-- <link type="text/css" rel="stylesheet" href="newstyle.css"> -->
   </head>
   <body>
@@ -66,53 +68,81 @@
               <p>Для меня большая честь быть сегодня с вами на открытии международной конференции «Диалог Форт-Росс».  Прежде всего я хотел бы поблагодарить её организаторов за то, что они собрали нас вместе на это важное и своевременное мероприятие.  А всех участников конференции, многих из которых я знаю уже долгие годы, я благодарю за то, что они приехали сюда, чтобы поддержать эту инициативу и принять участие в разговоре.</p>
               <p>Особая благодарность Саре Свидлер и Тиму Келли из Природоохранного управления Форт-Росса за их усилия и выдающийся профессиональный опыт, талант и навыки организации коллективной работы, которые они посвящают популяризации Форт-Росса во всём мире. Работа, которую они провели вместе с коллегами в Изборске, свидетельствует об их приверженности делу сохранения связей между нашими странами.</p>
               <p>Это и партнёрство музеев, и дискуссии между людьми, и возможности обменов для студентов и преподавателей.  Такие контакты между людьми помогают наводить мосты между российским и американским народами, укрепляя взаимопонимание на почве общей истории и культуры.</p>
-              <br>
+              <br>  <div class="toggle"></div>
+
+            </div>
+            <div class="py-2 d-lg-none d-inline-block text-center toggle-btn">
+              <a href="" class="btn btn-more">Раскрыть</a>
             </div>
             <div class="about-photo">
-              <img src="img/image 2.png" alt="">
+              <img class="img-fluid" src="img/image 2.png" alt="">
               <div class="text">
-                <p class="bold">— Шабаев Сергей Леонидович</p>
+                <p class="font-weight-bold">— Шабаев Сергей Леонидович</p>
                 <p>учредитель компании “Трансстрой”</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="indent" style="height:33px;"></div>
+        <div class="indent d-none d-lg-block" style="height:33px;"></div>
         <div class="wrap-content team">
           <div class="icon icon-pencil d-none d-lg-block"></div>
           <div class="content">
             <p class="title">Топ-менеджмент компании</p>
-            <div class="slide-team">
-              <ul>
-                <li data-bg="https://picsum.photos/1200/490/?random">
-                  <div class="slide-info">
-                    <b>—    Шабаев Сергей Леонидович 1</b>
-                    <p>учредитель компании “Трансстрой”</p>
-                  </div></li>
-                <li data-bg="https://picsum.photos/1300/490/?random">
-                  <div class="slide-info">
-                    <b>—    Шабаев Сергей Леонидович 2</b>
-                    <p>учредитель компании “Трансстрой”</p>
-                  </div></li>
-                <li data-bg="https://picsum.photos/1300/500/?random">
-                  <div class="slide-info">
-                    <b>—    Шабаев Сергей Леонидович 3</b>
-                    <p>учредитель компании “Трансстрой”</p>
-                  </div></li>
-                <li data-bg="https://picsum.photos/1300/510/?random">
-                  <div class="slide-info">
-                    <b>—    Шабаев Сергей Леонидович 4</b>
-                    <p>учредитель компании “Трансстрой”</p>
-                  </div></li>
-              </ul>
-              <div class="right-bg"></div>
-            </div>
+              <div class="row row-about">
+                <div class="col-nav">
+                  <div class="navigation"></div>
+                  <ul id='carousel-custom-dots' class='owl-dots'>
+                      <li class='owl-dot'></li>
+                      <li class='owl-dot'></li>
+                      <li class='owl-dot'></li>
+                      <li class='owl-dot'></li>
+                  </ul>
+                </div>
+                <div class="col-item">
+                  <div id="owl-about" class="owl-carousel owl-theme">
+                    <div class="item">
+                      <div class="item-img">
+                          <img src="img/image 1.png" alt="">
+                      </div>
+                      <div class="item-text">
+                        <p class="font-weight-bold">—    Шабаев Сергей Леонидович</p>
+                        <p>учредитель компании “Трансстрой”</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-img">
+                          <img src="https://picsum.photos/1200/500/?random" alt="">
+                        </div>
+                        <div class="item-text">
+                          <p class="font-weight-bold">—    Тест тест</p>
+                          <p>учредитель компании “Трансстрой”</p>
+                        </div>
+                      </div>
+                    <div class="item">
+                      <div class="item-img">
+                          <img src="https://picsum.photos/1200/480/?random" alt="">
+                        </div>
+                        <div class="item-text">
+                            <p>asd</p>
+                        </div>
+                      </div>
+                    <div class="item">
+                      <div class="item-img">
+                          <img src="https://picsum.photos/1200/480/?random" alt="">
+                        </div>
+                        <div class="item-text">
+                            <p>еуые</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
         <div class="indent" style="height:33px;"></div>
         <div class="wrap-content about">
           <div class="icon icon-logo d-none d-lg-block"></div>
-          <div class="content">
+          <div class="content about-content">
             <div class="about-company">
               <p class="title">О компании</p>
               <p>Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки модели развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение существенных финансовых и административных условий.</p>
@@ -135,6 +165,9 @@
                 <hr>
               </div>
             </div>
+        </div>
+        <div class="py-2 d-lg-none d-inline-block text-center toggle-btn2">
+          <a href="" class="btn btn-more">Раскрыть</a>
         </div>
         </div>
         <div class="indent" style="height:33px;"></div>
@@ -211,13 +244,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.slide.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
-    $(function() {
-      $('.slide-team').slide({
-        isAutoSlide: false,
-        slideSpeed: 10000,
-        isHoverShowArrow: false
-      });
+    var owl;
+    owl = $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1,
+        mouseDrag:false,
+        touchDrag:false,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        dotsContainer: '#carousel-custom-dots',
+        navContainer: ".navigation",
+        navText:["", ""]
     });
+    $('.owl-dots').on('click', 'li', function(e) {
+       owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+     });
+    </script>
+    <script type="text/javascript">
+    $(".toggle-btn").click(function(e) {
+    	e.preventDefault();
+      $(this).prev().toggleClass("text-open")
+    })
+    </script>
+    <script type="text/javascript">
+    $(".toggle-btn2").click(function(e) {
+    	e.preventDefault();
+      $(this).prev().toggleClass("text-open")
+    })
     </script>
 </html>
