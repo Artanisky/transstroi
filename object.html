@@ -7,7 +7,8 @@
     <link href="fonts/Montserrat.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css">
+    <link type="text/css" rel="stylesheet" href="assets/owl.carousel.css">
+    <link type="text/css" rel="stylesheet" href="assets/owl.theme.default.css">
     <link type="text/css" rel="stylesheet" href="style.css">
     <!-- <link type="text/css" rel="stylesheet" href="newstyle.css"> -->
   </head>
@@ -87,8 +88,20 @@
             <a class="btn btn-more" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">Подробнее</a>
           </div>
           <div class="col-object-3">
-            <div class="object-photo pb-3">
-              <img class="img-fluid" src="img/8.png" alt="">
+            <div class="object-photo py-3">
+              <div class="owl-carousel" data-slider-id="1">
+                  <div><img src="img/slide/stolisa.png" alt=""></div>
+                  <div><img src="img/slide/stolisa2.png" alt=""></div>
+                  <div><img src="img/slide/stolisa3.png" alt=""></div>
+                  <div><img src="img/slide/stolisa4.png" alt=""></div>
+                  <div><img src="img/slide/stolisa5.png" alt=""></div>
+                  <div><img src="img/slide/stolisa6.png" alt=""></div>
+                  <div><img src="img/slide/stolisa7.png" alt=""></div>
+              </div>
+              <div class="owl-resp">
+                <div class="owl-thumbs" data-slider-id="1">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -210,30 +223,19 @@
     <script src="js/lightslider.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel2.thumbs.min.js"></script>
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function(){
-      $(document).ready(function() {
-      var EWOBIW = $("#slide").lightSlider({
-        gallery:true,
-                item:1,
-                loop:true,
-                thumbItem:5,
-                thumbMargin:8,
-                slideMargin:0,
-                controls:false,
-                enableDrag: false,
-                responsive: [
-                  {
-                    breakpoint: 996,
-                      settings: {
-                        vThumbWidth:68,
-                        thumbMargin:10,
-                        verticalHeight:20,
-                      }
-                  }
-                ]
-          });
-        });
-      });;
+      $(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    thumbs: true,
+    thumbsPrerendered: true,
+    thumbImage: true,
+    loop:true,
+    dots: false,
+    navigation: false
+  });
+});
     </script>
 </html>

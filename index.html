@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/lightslider.css">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <!-- <link type="text/css" rel="stylesheet" href="newstyle.css"> -->
+    <link rel="stylesheet" href="assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
     <div class="div-mask"></div>
@@ -70,7 +72,6 @@
                 <a class="btn btn-theme slider-btn" href="#">Оставить заявку</a>
               </div>
             </div>
-            <p class="title">Обьекты</p>
             <div class="slide-img">
               <ul>
                 <li data-bg="img/8.png"></li>
@@ -84,6 +85,8 @@
                 <li data-bg="https://picsum.photos/1300/530/?random"></li>
               </ul>
             </div>
+            <p class="title d-lg-none d-block">Обьекты</p>
+
             <div class="col-lg-6">
               <h4>Жилой дом по улице Якутская, 11</h4>
               <p>Ввод в 4 квартале 2020г.</p>
@@ -100,41 +103,28 @@
       <h3>ЖК “Столица”</h3>
       <div class="project-slider">
         <div class="row">
-        <ul id="lightSlider">
-          <li data-thumb="img/slide/stolisa.png">
-            <img src="img/slide/stolisa.png" alt="">
-          </li>
-          <li data-thumb="img/slide/thumb/2.png">
-            <img src="img/slide/stolisa2.png" alt="">
-          </li>
-          <li data-thumb="img/slide/thumb/3.png">
-            <img src="img/slide/stolisa3.png" alt="">
-          </li>
-          <li data-thumb="img/slide/thumb/4.png">
-            <img src="img/slide/stolisa4.png" alt="">
-          </li>
-          <li data-thumb="img/slide/thumb/5.png">
-            <img src="img/slide/stolisa5.png" alt="">
-          </li>
-          <li data-thumb="img/slide/thumb/6.png">
-            <img src="img/slide/stolisa6.png" alt="">
-          </li>
-          <li data-thumb="img/slide/thumb/7.png">
-            <img src="img/slide/stolisa7.png" alt="">
-          </li>
-        </ul>
-          <div class="col-md-5 d-lg-flex flex-column d-none">
-            <p>ЖК “Столица” - ключевой проект жилого комплекса в г. Якутске. Повседневная практика показывает, что новая модель организационной деятельности позволяет оценить значение новых предложений.</p>
-            <p>С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующих условий активизации.</p>
-            <p>Еще один текстовый абзац с информацией о жилом комплексе “Столица”, который является актуальным проектом нашей компании.</p>
-            <div class="d-flex align-items-end justify-content-between flex-grow-1">
-              <div class="lSAction">
-                <a class="lSPrev"></a>
-                <a class="lSNext"></a>
-              </div>
-                <a class="slider-btn float-right" href="object.html">Другие обьекты<img src="img/arrow-right.svg"  alt=""></a>
+          <div class="col-project-slide d-flex">
+            <div class="owl-carousel" data-slider-id="1">
+                <div><img src="img/slide/stolisa.png" alt=""></div>
+                <div><img src="img/slide/stolisa2.png" alt=""></div>
+                <div><img src="img/slide/stolisa3.png" alt=""></div>
+                <div><img src="img/slide/stolisa4.png" alt=""></div>
+                <div><img src="img/slide/stolisa5.png" alt=""></div>
+                <div><img src="img/slide/stolisa6.png" alt=""></div>
+                <div><img src="img/slide/stolisa7.png" alt=""></div>
+            </div>
+            <div class="owl-thumbs" data-slider-id="1">
             </div>
           </div>
+          <div class="col-project-text d-lg-flex flex-column d-none">
+                      <p>ЖК “Столица” - ключевой проект жилого комплекса в г. Якутске. Повседневная практика показывает, что новая модель организационной деятельности позволяет оценить значение новых предложений.</p>
+                      <p>С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующих условий активизации.</p>
+                      <p>Еще один текстовый абзац с информацией о жилом комплексе “Столица”, который является актуальным проектом нашей компании.</p>
+                      <div class="d-flex align-items-end justify-content-between flex-grow-1">
+                        <div class="navigation"></div>
+                          <a class="slider-btn float-right" href="object.html">Другие обьекты<img src="img/arrow-right.svg" alt=""></a>
+                      </div>
+                    </div>
         </div>
       </div>
     </section>
@@ -237,46 +227,26 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/lightslider.js"></script>
     <script src="js/jquery.inputmask.min.js"></script>
     <script src="js/jquery.slide.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel2.thumbs.min.js"></script>
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function(){
-      $(document).ready(function() {
-      var EWOBIW = $("#lightSlider").lightSlider({
-        adaptiveHeight:true,
-        gallery:true,
-        item:1,
-        vertical:true,
-        vThumbWidth:94,
-        verticalHeight:512,
-        thumbItem:7,
-        loop:true,
-        thumbMargin:6,
-        controls:false,
-        slideMargin:0,
-        addClass: 'col-md-7',
-        useCSS:false,
-        responsive: [
-          {
-            breakpoint: 1200,
-              settings: {
-                vThumbWidth:68,
-                thumbMargin:10,
-                verticalHeight:326,
-              }
-          }
-        ]
-      });
-          $('.lSAction .lSPrev').click(function() {
-            EWOBIW.goToPrevSlide();
-          });
-          $('.lSAction .lSNext').click(function() {
-            EWOBIW.goToNextSlide();
-          });
-        });
-      });;
+      $(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    thumbs: true,
+    thumbsPrerendered: true,
+    thumbImage: true,
+    loop:true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    dots: false,
+    navContainer: ".navigation",
+    navText:["", ""]
+  });
+});
     </script>
   </body>
 </html>
