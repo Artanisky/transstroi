@@ -454,6 +454,12 @@ body {
 	font-weight: bold;
 	margin: 0;
 }
+.slide .titleobj {
+	margin: 12px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+}
 .slide {
 	height: auto;
 	position: relative;
@@ -897,6 +903,7 @@ body {
 	display: inline-block;
 	font-size: 18px;
 	padding: 38px 37px 33px 27px;
+	margin: 0;
 }
 .about-info {
 	background: #f9f9f9;
@@ -1325,6 +1332,9 @@ body {
 		border: 0;
 		padding: 0 12px;
 	}
+	.btn-margin {
+		margin-top: 28px;
+	}
 	.menu-btn {
 		background: #f39314;
 		height: 50px;
@@ -1385,7 +1395,7 @@ body {
 	}
 	.slide .slide-img {
 		border-top: 1px solid #eee;
-		margin: 34px 0 40px 0;
+		margin-top: 34px;
 		position: relative;
 		width: 100%;
 	}
@@ -1397,19 +1407,19 @@ body {
 		display: none;
 	}
 	.slide .arrow {
-		bottom: 110px;
+		bottom: 120px;
 		left: calc(50% + 47px);
 	}
 	.slide .arrow .arrow-right {
 		background-image: url(img/arrow-rightt.svg);
-		left: 48px;
+		left: 60px;
 		top: 0;
 	}
 	.slide .arrow .arrow-left {
 		background-image: url(img/arrow-left.svg);
 	}
 	.slide .dots {
-		bottom: 140px;
+		bottom: 130px;
 		flex-direction: row;
 		left: 12px;
 	}
@@ -1548,8 +1558,27 @@ body {
 		border: 1px solid #f39314;
 		font-size: 12px;
 		font-weight: 500;
-		padding: 9px 28px;
+		color: #f39314;
+		padding: 10px 40px;
+		border-radius: 25px;
 		text-decoration: none;
+		transition: color .15s ease-in-out,
+								background-color .15s ease-in-out,
+								border-color .15s ease-in-out,
+								box-shadow .15s ease-in-out;
+	}
+	.slider-btn:hover {
+		color: #fff;
+		background-color: #f39314;
+		text-decoration: none;
+	}
+	.btn-theme {
+		font-size: 12px;
+		padding: 9px 46px;
+	}
+	.site-contact {
+		padding-top: 32px;
+		padding-bottom: 94px;
 	}
 	.personal-data {
 		background: #f1f1f1;
@@ -1560,7 +1589,7 @@ body {
 		justify-content: space-between;
 	}
 	.news-block .col-lg-6:last-child {
-		padding-top: 210px;
+		padding-top: 200px;
 	}
 	.news-block .col-lg-6:last-child h4 {
 		margin-right: 150px;
@@ -1645,6 +1674,9 @@ body {
   #collapseExample {
     display: block;
   }
+	.map {
+		width: 100%;
+	}
 }
 /* ---------------------------------
       Media Query - Table (above 1200px)
