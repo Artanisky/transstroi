@@ -7,11 +7,9 @@
     <link href="fonts/Montserrat.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <link type="text/css" rel="stylesheet" href="assets/owl.carousel.min.css">
-    <link type="text/css" rel="stylesheet" href="assets/owl.theme.default.min.css">
-    <!-- <link type="text/css" rel="stylesheet" href="newstyle.css"> -->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
   </head>
   <body>
     <div class="div-mask"></div>
@@ -72,7 +70,7 @@
 
             </div>
             <div class="py-2 d-lg-none d-inline-block text-center toggle-btn">
-              <a href="" class="btn btn-more">Раскрыть</a>
+              <a href="" class="btn btn-more">Читать далее</a>
             </div>
             <div class="about-photo">
               <img class="img-fluid" src="img/image 2.png" alt="">
@@ -167,7 +165,7 @@
             </div>
         </div>
         <div class="py-2 d-lg-none d-inline-block text-center toggle-btn">
-          <a href="" class="btn btn-more">Раскрыть</a>
+          <a href="" class="btn btn-more">Читать далее</a>
         </div>
         </div>
         <div class="indent" style="height:33px;"></div>
@@ -266,7 +264,11 @@
     </script>
     <script type="text/javascript">
       $(".toggle-btn").click(function(e) {
-      	e.preventDefault();
+        e.preventDefault();
+        $(this).html(function(i,old){
+            return old=='<a href="" class="btn btn-more">Свернуть</a>' ?  '<a href="" class="btn btn-more">Читать далее</a>' : '<a href="" class="btn btn-more">Свернуть</a>';
+        });
+        $(this).toggleClass("collapsed");
         $(this).prev().toggleClass("text-open");
       })
     </script>

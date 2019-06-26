@@ -9,6 +9,14 @@ if ($('section').is('.slide')) {
   });
 }
 $('[data-toggle="offcanvas"]').on('click', function () {
+  mobileMenu();
+  $('body').css('overflow','hidden')
+});
+$('.div-mask').on('click', function(e) {
+  mobileMenu();
+  $('body').css('overflow','auto')
+});
+function mobileMenu() {
   $('.offcanvas-collapse').toggleClass('open');
   $('.div-mask').toggleClass('show');
-});
+}

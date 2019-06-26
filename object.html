@@ -7,8 +7,8 @@
     <link href="fonts/Montserrat.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="assets/owl.carousel.css">
-    <link type="text/css" rel="stylesheet" href="assets/owl.theme.default.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css">
     <link type="text/css" rel="stylesheet" href="style.css">
     <!-- <link type="text/css" rel="stylesheet" href="newstyle.css"> -->
   </head>
@@ -88,7 +88,7 @@
             <a class="btn btn-more" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">Подробнее</a>
           </div>
           <div class="col-object-3">
-            <div class="object-photo py-3">
+            <div class="object-photo">
               <div class="owl-carousel" data-slider-id="1">
                   <div><img src="img/slide/stolisa.png" alt=""></div>
                   <div><img src="img/slide/stolisa2.png" alt=""></div>
@@ -220,11 +220,17 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/lightslider.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/owl.carousel2.thumbs.min.js"></script>
+    <script type="text/javascript">
+    $('.btn-more').click(function(){
+      $(this).text(function(i,old){
+          return old=='СВЕРНУТЬ' ?  'ПОДРОБНЕЕ' : 'СВЕРНУТЬ';
+      });
+    });
+    </script>
     <script type="text/javascript">
       $(document).ready(function(){
   $('.owl-carousel').owlCarousel({

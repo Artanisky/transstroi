@@ -108,6 +108,10 @@ body {
 	background-image: url(img/arrow-more-up.svg);
 	text-decoration: underline;
 }
+.collapsed .btn-more {
+	background-image: url(img/arrow-more-up.svg);
+	text-decoration: underline;
+}
 .slider-btn {
 	border: 0;
 	color: #f39314;
@@ -391,8 +395,8 @@ body {
 	font-family: 'Segoe UI', arial;
 	font-size: 14px;
 }
-.wrap-contact label {
-	color: #828282!important;
+.wrap-contact .contact .form-group label{
+	font-family: 'Segoe UI', arial;
 }
 /* ---------------------------------
       Page - Main
@@ -570,6 +574,9 @@ body {
 	display: flex;
 	padding-bottom: 26px;
 }
+.project-slider .owl-carousel .owl-item img{
+	width: auto;
+}
 .project-slider .owl-carousel {
   width: 603px;
   margin-right: 18px;
@@ -582,6 +589,7 @@ body {
   padding: 0;
   margin-bottom: 6px;
   overflow: hidden;
+	background: #fff;
 }
 .col-project-slide {
   width: 61%;
@@ -666,6 +674,9 @@ body {
 	color: #f39314;
 	font-size: .75rem;
 }
+.items-enum li {
+	margin-bottom: 4px;
+}
 /* ---------------------------------
       Page - Object
 --------------------------------- */
@@ -700,6 +711,7 @@ body {
 }
 .object-doc a {
 	color: #f39314;
+	font-size: 12px;
 	display: block;
 	line-height: 14px;
 	padding: 6px 0;
@@ -1222,6 +1234,12 @@ body {
 		margin-bottom: 0;
 		margin-right: 16px;
 	}
+	.wrap-contact label {
+		color: #828282!important;
+	}
+	.site-contact h3 {
+		margin-bottom: 64px;
+	}
 }
 /* ---------------------------------
       Media Query - Mobile (below 992px)
@@ -1323,6 +1341,7 @@ body {
 	}
 	.contact-info {
 		padding: 18px 0;
+		font-size: 12px;
 	}
 	.wrapper h3 {
 		font-size: 24px;
@@ -1407,7 +1426,7 @@ body {
 		display: none;
 	}
 	.slide .arrow {
-		bottom: 120px;
+		bottom: 140px;
 		left: calc(50% + 47px);
 	}
 	.slide .arrow .arrow-right {
@@ -1419,7 +1438,7 @@ body {
 		background-image: url(img/arrow-left.svg);
 	}
 	.slide .dots {
-		bottom: 130px;
+		bottom: 150px;
 		flex-direction: row;
 		left: 12px;
 	}
@@ -1442,7 +1461,11 @@ body {
 		border-right: none;
 		margin: 0;
 		padding: 0;
-		padding-bottom: 12px;
+		padding-bottom: 32px;
+	}
+	.about,
+	.youtube {
+		border-top: 0;
 	}
 	.container {
 		max-width: 100%;
@@ -1505,6 +1528,9 @@ body {
 	.footer-info p {
 		text-align: left;
 	}
+	.personal-data label {
+		font-size: 10px;
+	}
 	.phone {
 		background-size: 13px;
 		padding-left: 20px;
@@ -1540,7 +1566,10 @@ body {
 		padding-right: 12px;
 	}
 	.site-contact h3 {
+		font-size: 14px;
+		font-weight: bold;
 		margin-top: 3px;
+		margin-bottom: 36px;
 		padding-left: 17px;
 		padding-right: 17px!important;
 	}
@@ -1617,13 +1646,14 @@ body {
 	}
 	.row-about .col-nav .navigation {
 		background: none;
+		bottom: 12px;
 	}
 	.row-about .col-item {
 		width: 100%;
 	}
 	.row-about .owl-dots {
 		right: calc(50% + 160px);
-		top: 230px;
+		top: 225px;
 	}
 	.row-about .item .item-img {
 		height: 160px;
@@ -1634,6 +1664,7 @@ body {
 		flex-direction: column;
 	}
 	.row-about .item .item-text {
+		font-size: 12px;
 		padding: 16px 15px 50px 15px;
 		text-align: left;
 	}
@@ -1643,7 +1674,11 @@ body {
 	.object .col-object {
 		margin: 0;
 	}
+	.object-photo {
+		padding-bottom: 16px;
+	}
 	.about-text {
+		font-size: 12px;
 		height: 290px;
 		overflow: hidden;
 		position: relative;
@@ -1653,6 +1688,26 @@ body {
 		height: 290px;
 		overflow: hidden;
 		position: relative;
+	}
+	.card-cst .card-body .items-enum li a {
+		font-size: 10px;
+	}
+	.card-cst .card-body,
+	.card-cst .card-header span,
+	.about-company {
+		font-size: 12px;
+	}
+	.about-text .title,
+	.about-company .title{
+		font-size: 14px;
+	}
+	.about-info .info-block b {
+		font-size: 28px;
+		margin-bottom: 6px;
+	}
+	.about-info .info-block p {
+		font-size: 12px;
+		margin-bottom: 0;
 	}
 	.text-open {
 		height: auto;
@@ -1764,6 +1819,15 @@ body {
 	}
 	.object-photo .owl-resp .owl-thumbs {
 	  flex-wrap: wrap;
+	}
+	.site-contact h3 {
+		margin-bottom: 44px;
+	}
+	.site-contact .contact .form-group label {
+		font-weight: bold;
+	}
+	.contact .form-group label {
+		font-weight: normal;
 	}
 }
 /*
